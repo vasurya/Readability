@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Readability Calculator and Suitable Age Finder</title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	
+</head>
+<body>
+	<div class="container p-3 my-3 bg-dark text-white text-center">
+		<h1>Readability Calculator</h1>
+	</div>
+	<div class="container-fluid p-3 text-center">
+		<h2>Enter the text below</h2>
+
+			<textarea class="form-control" type="text" 
+			id="userInput" rows="5" cols ="30" 
+			placeholder="Please enter your text here"></textarea>
+			<br />
+			<button type="button" class="btn btn-dark btn-lg" 
+			onclick="getInputValue();"> Calculate!</button>
+	</div>
+		<!-- Results-->
+
+		<div style="border: solid"class="container-sm">
+			<h2>Results:</h2>
+			<div style="overflow: hidden">
+				<p style="float:left;">Number of sentences:  </p>
+				<p style="float:center;" id="sentences"></p>
+			</div>
+			<div style="overflow: hidden">
+				<p style="float:left;">No of words:  </p>
+				<p style="float:center;" id="syllables"></p>
+			</div>
+			<div style="overflow: hidden">
+				<p style="float:left;">Estimated reading time:  </p>
+				<p style="float:center;" id="words"></p>
+			</div>
+			
+			<div style="overflow: hidden">
+				<p style="float:left;"> Flesch score:  </p>
+				<p style="float:center;" id="flesch"></p>
+			</div>
+		</div>
+			
+		
+	
+	<script src = "work.js">
+	</script>
+	
+</body>
+</html>
